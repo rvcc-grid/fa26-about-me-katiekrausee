@@ -1,0 +1,60 @@
+/* Color palette and general page styling */
+:root {
+    --navy: #243447;
+    --terracotta: #D97757;
+    --sand: #E8CFAE;
+    --cream: #F7F3EB;
+    --charcoal: #303030;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    background-color: var(--navy);
+    color: var(--cream);
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--cream);
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    color: var(--terracotta);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--navy);
+    color: var(--cream);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
