@@ -58,3 +58,36 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Hobbies section */
+.hobbies {
+    background-color: var(--sand);
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+}
+
+/* Hobbies heading */
+.hobbies h2 {
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hobbies list */
+.hobbies ul {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+/* Individual hobbies */
+.hobbies li {
+    color: var(--charcoal);
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: var(--cream);
+    border-radius: 6px;
+}
