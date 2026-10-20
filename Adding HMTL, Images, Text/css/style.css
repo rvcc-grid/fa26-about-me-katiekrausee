@@ -91,3 +91,50 @@ footer p {
     background-color: var(--cream);
     border-radius: 6px;
 }
+
+/* Photo gallery section */
+.gallery {
+    margin: 3rem 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gallery hr {
+    border: 0;
+    border-top: 2px solid var(--terracotta);
+    margin: 1rem 0 2rem;
+}
+
+/* Responsive gallery layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1.25rem;
+}
+
+/* Individual photo cards */
+.gallery figure {
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Gallery images */
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Photo captions */
+.gallery figcaption {
+    text-align: center;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
