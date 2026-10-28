@@ -66,13 +66,16 @@ footer p {
     margin: 30px auto;
     max-width: 700px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Hobbies heading */
 .hobbies h2 {
     color: var(--navy);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Hobbies list */
@@ -163,3 +166,50 @@ article p {
     line-height: 1.8;
     margin-bottom: 1.25rem;
 }
+
+/* Tablet screen: 960px and wider */
+@media screen and (min-width: 60em) {
+
+    /* Display each photo beside its caption */
+    .gallery figure {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        align-items: center;
+        gap: 1rem;
+}
+
+.gallery figure img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+/* Larger screens: 3-column gallery */
+@media screen and (min-width: 100em) {
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .gallery-grid figure {
+        display: block;
+        min-width: 0;
+    }
+
+    .gallery > hr {
+        display: none;
+    }
+
+}
+
