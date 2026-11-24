@@ -1,0 +1,80 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar styling */
+header {
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--navy);
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 1.75rem;
+    color: var(--cream);
+    margin: 0;
+}
+
+/* Navigation list styling */
+.navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+}
+
+/* Navigation link styling */
+.nav-links {
+    display: block;
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.nav-links:hover,
+.nav-links:focus-visible {
+    background-color: var(--terracotta);
+    color: var(--navy);
+}
+
+/* Media query for wider screens */
+@media screen and (min-width: 960px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .navbar-links ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}

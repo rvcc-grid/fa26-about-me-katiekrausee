@@ -7,19 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
     
     <!-- the body element contains all shown to a visitor-->
 
     <header>
-        <!-- the header shows logo and page title-->
-         <img src="images/bob.svg" alt="Bob">
-         <h1>Web Dev I</h1>
-    </header>
+    <nav class="navbar">
 
+        <div class="logo">
+            <img src="images/bob.svg" alt="Bob">
+            <h1>Web Dev I</h1>
+        </div>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#bio" class="nav-links">Bio</a></li>
+                <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                <li><a href="#lit" class="nav-links">Blog</a></li>
+                <li><a href="#contact" class="nav-links">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
     <main>
         <!--the main element envelops important page content-->
         <section>
@@ -32,7 +46,7 @@
             <!--close hero section-->
         </section>
 
-        <section>
+        <section id="bio">
 
             <!-- bio section: personal information -->
 
@@ -64,7 +78,7 @@
         </ul>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2>My Automotive Photography</h2>
         <hr>
 
@@ -84,7 +98,9 @@
         </div>
     </section>
 
-    <article>
+    <article id="lit">
+        <h2>My Blog</h2>
+
         <section id="myVideo">
         <h2>My Website Tour</h2>
 
@@ -98,6 +114,7 @@
 
         <p>A screen recording showcasing my FRAME Automotive Creative website.</p>
     </section>
+    </article>
 
     <section id="contact">
         <h2>Contact Me</h2>
