@@ -1,13 +1,29 @@
-/* Smooth scrolling */
+/* make scrolling smooth */
 html {
     scroll-behavior: smooth;
 }
 
-/* Navbar styling */
+/*
+get rid of padding & sizing on body so
+header is at top
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     padding: 0;
 }
 
+/* add some padding back to rest of page */
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* navbar */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -17,7 +33,7 @@ header {
     gap: 1rem;
 }
 
-/* Logo styling */
+/* logo */
 .logo {
     display: flex;
     align-items: center;
@@ -36,7 +52,7 @@ header {
     margin: 0;
 }
 
-/* Navigation list styling */
+/* navigation list */
 .navbar-links ul {
     display: flex;
     flex-direction: column;
@@ -47,7 +63,10 @@ header {
     gap: 0.5rem;
 }
 
-/* Navigation link styling */
+/*
+style all a tags in header
+and then on hover
+*/
 .nav-links {
     display: block;
     color: var(--cream);
@@ -58,14 +77,17 @@ header {
     transition: background-color 0.3s;
 }
 
-/* Hover effect */
 .nav-links:hover,
 .nav-links:focus-visible {
     background-color: var(--terracotta);
     color: var(--navy);
 }
 
-/* Media query for wider screens */
+/*
+media query for non-mobile nav bar
+min-width set to width of nav elements
+such that no text wraps
+*/
 @media screen and (min-width: 960px) {
     .navbar {
         flex-direction: row;
